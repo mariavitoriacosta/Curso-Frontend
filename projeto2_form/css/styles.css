@@ -1,3 +1,160 @@
-h1 {
-    color: red;
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+p, label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+input[type="file"],
+textarea {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+
+}
+
+/* page header */
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #683ab7a8;
+    z-index: 1;
+}
+
+.header h3 {
+    color: #fff;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* form container */
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+/* form header */
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: #d80835;
+}
+
+.box-input {
+    margin-bottom: 35px;
+}
+
+.block {
+    display: block;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
 }
